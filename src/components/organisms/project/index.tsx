@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaAppStoreIos, FaGamepad } from "react-icons/fa";
+import { FaAppStoreIos, FaGamepad, FaProjectDiagram } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa6";
 
 export const Project = () => {
@@ -9,10 +9,23 @@ export const Project = () => {
     <div className="bg-gray-950">
       <div className="grid grid-cols-12 items-center h-full relative py-4">
         <div className="col-span-1"></div>
-        <div className="col-span-10 h-full gap-3 py-8 ">
-          <h2 className="text-4xl font-bold mb-4  text-white">Projetos</h2>
+        <div className="col-span-10 h-full gap-3 py-8 container mx-auto">
+          <h2 className="text-4xl font-bold mb-4  text-white flex items-center gap-2">
+            <FaProjectDiagram className="text-blue-400" /> Projetos
+          </h2>
 
-          <div className="grid grid-flow-row sm:grid-flow-col w-full mb-2 divide-y sm:divide-x divide-gray-400 overflow-auto border border-gray-400 rounded-lg">
+          <p className="text-md text-gray-400 text-justify mb-4">
+            Ao longo da minha carreira, tive a oportunidade de trabalhar em
+            diversos projetos que refletem minha paixão por tecnologia e
+            inovação. Desde aplicações completas que integram front-end e
+            back-end, até APIs robustas e jogos interativos, cada projeto
+            representa um passo na minha jornada como desenvolvedor. Aqui estão
+            alguns dos projetos mais significativos que desenvolvi, cada um com
+            suas próprias características e tecnologias envolvidas. Explore-os
+            para entender melhor minha experiência e habilidades técnicas.
+          </p>
+
+          <div className="grid grid-flow-row sm:grid-flow-col w-full mb-2 divide-y sm:divide-x divide-gray-800 overflow-auto border border-gray-800 rounded-lg">
             <div
               className={`flex gap-4 items-start justify-center p-4 ${
                 selectedProject == "APPS"
