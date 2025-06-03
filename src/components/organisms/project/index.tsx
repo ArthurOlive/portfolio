@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { FaCloud, FaWebflow } from "react-icons/fa6";
 
 export const Project = () => {
+  const [selectedProject, setSelectedProject] = useState<string>("APPS");
+
   return (
     <div className="bg-gray-950">
       <div className="grid grid-cols-12 items-center h-full relative py-4">
@@ -8,8 +11,15 @@ export const Project = () => {
         <div className="col-span-10 h-full gap-3 p-8 ">
           <h2 className="text-4xl font-bold mb-4  text-white">Projetos</h2>
 
-          <div className="grid grid-cols-3 w-full mb-2 overflow-hidden divide-x divide-gray-400 overflow-x-auto border border-gray-400 rounded-lg">
-            <div className="flex gap-4 items-start justify-center p-4 text-purple-500 bg-purple-500/5 cursor-pointer">
+          <div className="grid grid-flow-row sm:grid-flow-col w-full mb-2 divide-y sm:divide-x divide-gray-400 overflow-auto border border-gray-400 rounded-lg">
+            <div
+              className={`flex gap-4 items-start justify-center p-4 ${
+                selectedProject == "APPS"
+                  ? "text-purple-500 bg-purple-500/5 "
+                  : "text-white"
+              } cursor-pointer`}
+              onClick={() => setSelectedProject("APPS")}
+            >
               <span className="text-4xl ">
                 <FaWebflow />
               </span>
@@ -23,8 +33,15 @@ export const Project = () => {
               </div>
             </div>
 
-            <div className="text-white flex gap-4 items-start justify-center p-4 cursor-pointer">
-              <span className="text-4xl text-gray-400">
+            <div
+              className={`${
+                selectedProject == "APIS"
+                  ? "text-pink-500 bg-pink-500/5 "
+                  : "text-white"
+              } flex gap-4 items-start justify-center p-4 cursor-pointer`}
+              onClick={() => setSelectedProject("APIS")}
+            >
+              <span className="text-4xl ">
                 <FaCloud />
               </span>
               <div>
@@ -37,8 +54,16 @@ export const Project = () => {
               </div>
             </div>
 
-            <div className="text-white flex gap-4 items-start justify-center p-4 cursor-pointer">
-              <span className="text-4xl text-gray-400">
+            <div
+              className={`
+                ${
+                  selectedProject == "GAMES"
+                    ? "text-blue-500 bg-blue-500/5 "
+                    : "text-white"
+                } flex gap-4 items-start justify-center p-4 cursor-pointer`}
+              onClick={() => setSelectedProject("GAMES")}
+            >
+              <span className="text-4xl">
                 <FaWebflow />
               </span>
               <div>

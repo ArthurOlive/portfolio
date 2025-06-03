@@ -8,9 +8,11 @@ export const Header = () => {
           <h1 className="text-2xl font-bold p-1 bg-blue-500 rounded-lg italic">
             AO
           </h1>
-          <h1 className="text-2xl">Arthur Oliveira</h1>
+          <h1 className="text-2xl whitespace-nowrap overflow-ellipsis">
+            Arthur Oliveira
+          </h1>
         </div>
-        <nav>
+        <nav className="hidden md:block">
           <ul className="flex gap-2 items-center">
             <li>
               <a
@@ -39,7 +41,7 @@ export const Header = () => {
             <li>
               <a
                 href="/contact"
-                className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
+                className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-l whitespace-nowrap overflow-ellipsis"
               >
                 Artigos e E-Books
               </a>

@@ -13,7 +13,7 @@ export const About = () => {
         <div className="grid grid-cols-12 items-center h-full justify-items-center relative py-4">
           <div className="col-span-1"></div>
           <div className="col-span-10 grid grid-cols-12 h-full gap-3">
-            <div className="p-8 col-span-8 border-2 border-gray-900 rounded-lg bg-gray-950">
+            <div className="p-8 col-span-12 lg:col-span-8 border-2 border-gray-900 rounded-lg bg-gray-950">
               <h2 className="text-4xl font-bold mb-4  text-white">Sobre min</h2>
               <p className="text-lg text-gray-400 text-justify mb-4">
                 Apaixonado por tecnologia, iniciei minha jornada em programação
@@ -39,7 +39,7 @@ export const About = () => {
                 de soluções tecnológicas transformadoras.
               </p>
             </div>
-            <div className="col-span-4 relative">
+            <div className="col-span-4 relative hidden sm:hidden min-lg:block">
               <img
                 src="/images/arthur-oliveira-summit.jpg"
                 alt="imagem de Arthur Oliveira no Startup Summit"
