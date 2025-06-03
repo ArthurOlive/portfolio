@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FaCloud, FaWebflow } from "react-icons/fa6";
+import { FaAppStoreIos, FaGamepad } from "react-icons/fa";
+import { FaCloud } from "react-icons/fa6";
 
 export const Project = () => {
   const [selectedProject, setSelectedProject] = useState<string>("APPS");
@@ -21,7 +22,7 @@ export const Project = () => {
               onClick={() => setSelectedProject("APPS")}
             >
               <span className="text-4xl ">
-                <FaWebflow />
+                <FaAppStoreIos />
               </span>
               <div>
                 <h3 className="text-md pb-3">Apps e sistemas</h3>
@@ -41,7 +42,7 @@ export const Project = () => {
               } flex gap-4 items-start justify-center p-4 cursor-pointer`}
               onClick={() => setSelectedProject("APIS")}
             >
-              <span className="text-4xl ">
+              <span className="text-4xl">
                 <FaCloud />
               </span>
               <div>
@@ -64,7 +65,7 @@ export const Project = () => {
               onClick={() => setSelectedProject("GAMES")}
             >
               <span className="text-4xl">
-                <FaWebflow />
+                <FaGamepad />
               </span>
               <div>
                 <h3 className="text-md pb-3">Jogos e testes</h3>
@@ -78,7 +79,113 @@ export const Project = () => {
           </div>
 
           <div className=" gap-4 rounded-2xl overflow-hidden">
-            <div className="flex text-white"></div>
+            <div className="flex text-white">
+              <div className="w-full">
+                {selectedProject === "APPS" && (
+                  <div className="py-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2">
+                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                      <div className="relative mb-4">
+                        <h3 className="text-lg font-semibold mb-2">Mindsafe</h3>
+                        <span className="p-1 text-xs bg-red-500 rounded-lg text-white absolute top-0 right-2">
+                          Privado
+                        </span>
+                      </div>
+                      <div className="mb-4">
+                        <img
+                          src="images/mindsafeapp.png"
+                          alt="Mindsafe app"
+                          className="rounded-2xl shadow-lg mt-4 w-full h-auto object-cover"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-400">
+                        Mindsafe é um aplicativo de gerenciamneto de clinícas de
+                        psicologia, com o intuito de facilitar o agendamento de
+                        consultas, o gerenciamento de pacientes e a organização
+                        de prontuários eletrônicos. Desenvolvido com{" "}
+                        <b>ReactJS, Spring e Postgres</b>, A Mindsafe oferece
+                        uma interface intuitiva e funcionalidades robustas para
+                        profissionais da área de saúde mental.
+                      </p>
+                      <ul>
+                        <li className="text-sm text-gray-400 mt-2">
+                          <b>Stack:</b> ReactJS, Kotlin, Java, Spring, Postgres
+                        </li>
+                        <li className="text-sm text-gray-400">
+                          <b>Link:</b>{" "}
+                          <a
+                            href="https://mindsafe.com.br"
+                            className="hover:underline"
+                            target="_blank"
+                          >
+                            mindsafe.com.br
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                      <div className="relative mb-4">
+                        <h3 className="text-lg font-semibold mb-2">
+                          Foodburger
+                        </h3>
+                        <span className="p-1 text-xs bg-blue-500 rounded-lg text-white absolute top-0 right-2">
+                          Aberto
+                        </span>
+                      </div>
+                      <div className="mb-4 flex flex-row gap-4 w-full h-96 items-center justify-center">
+                        <img
+                          src="https://github.com/ArthurOlive/foodburger/blob/main/.github/images/app.png?raw=true"
+                          alt="Foodburger app"
+                          className="rounded-2xl shadow-lg mt-4 h-full object-cover"
+                        />
+                        <img
+                          src="https://github.com/ArthurOlive/foodburger/blob/main/.github/images/app2.png?raw=true"
+                          className="rounded-2xl shadow-lg mt-4 h-full  object-cover hidden xl:block"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-400">
+                        Foodburger é um aplicativo de delivery de lanches,
+                        desenvolvido com o objetivo de oferecer uma experiência
+                        de compra rápida e eficiente. Com uma interface amigável
+                        e intuitiva, o Foodburger permite que os usuários façam
+                        pedidos de forma simples e rápida, garantindo uma
+                        experiência de compra agradável.
+                      </p>
+
+                      <ul>
+                        <li className="text-sm text-gray-400 mt-2">
+                          <b>Stack:</b> ReactJS, Java, Spring, Postgres
+                        </li>
+                        <li className="text-sm text-gray-400">
+                          <b>Link:</b>{" "}
+                          <a
+                            href="https://github.com/ArthurOlive/foodburger"
+                            className="hover:underline pr-1"
+                            target="_blank"
+                          >
+                            foodburger-web
+                          </a>
+                          <a
+                            href="https://github.com/ArthurOlive/foodburger-api"
+                            className="hover:underline"
+                            target="_blank"
+                          >
+                            foodburger-api
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
+
+                {selectedProject === "APIS" && (
+                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2 min-h-96"></div>
+                )}
+
+                {selectedProject === "GAMES" && (
+                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2 min-h-96"></div>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
