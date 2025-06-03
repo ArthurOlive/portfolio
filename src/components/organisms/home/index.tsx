@@ -5,7 +5,10 @@ import { FaCircleDot } from "react-icons/fa6";
 
 export const Home = () => {
   return (
-    <div className="grid grid-cols-12 bg-gradient-to-t from-gray-950 to-slate-900 overflow-hidden">
+    <div
+      className="grid grid-cols-12 bg-gradient-to-t from-gray-950 to-slate-900 overflow-hidden"
+      id="home"
+    >
       <div className="w-20 ml-auto col-start-1 row-span-full row-start-1 hidden border-x border-x-(--pattern-fg) bg-[image:repeating-linear-gradient(315deg,_var(--pattern-fg)_0,_var(--pattern-fg)_1px,_transparent_0,_transparent_50%)] bg-[size:10px_10px] bg-fixed [--pattern-fg:var(--color-black)]/5 md:block dark:[--pattern-fg:var(--color-white)]/10"></div>
 
       <div className="col-span-12 md:col-span-10 grid grid-cols-12 items-center gap-12 container text-white mx-auto px-8 py-40">

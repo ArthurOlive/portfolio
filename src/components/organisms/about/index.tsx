@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="bg-gray-950">
+    <div className="bg-gray-950" id="about">
       <div
         className="py-2 relative overflow-hidden rounded-lg bg-gray-950/[2.5%]
                 after:pointer-events-none after:absolute after:inset-0 after:rounded-lg

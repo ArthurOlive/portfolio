@@ -6,7 +6,7 @@ export const Project = () => {
   const [selectedProject, setSelectedProject] = useState<string>("APPS");
 
   return (
-    <div className="bg-gray-950">
+    <div className="bg-gray-950" id="projects">
       <div className="grid grid-cols-12 items-center h-full relative py-4">
         <div className="col-span-1"></div>
         <div className="col-span-10 h-full gap-3 py-8 container mx-auto">

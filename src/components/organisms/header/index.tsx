@@ -16,7 +16,8 @@ export const Header = () => {
           <ul className="flex gap-2 items-center">
             <li>
               <a
-                href="/"
+                href="#home"
+                aria-label="Início"
                 className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
               >
                 Início
@@ -24,7 +25,8 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/about"
+                href="#about"
+                aria-label="Sobre mim"
                 className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
               >
                 Sobre
@@ -32,7 +34,8 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/contact"
+                href="#experience"
+                aria-label="Experiência"
                 className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
               >
                 Experiência
@@ -40,7 +43,8 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/contact"
+                href="#projects"
+                aria-label="Projetos"
                 className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-l whitespace-nowrap overflow-ellipsis"
               >
                 Projetos

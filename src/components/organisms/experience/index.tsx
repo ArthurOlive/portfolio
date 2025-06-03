@@ -2,7 +2,10 @@ import { FaNetworkWired } from "react-icons/fa";
 
 export const Experience = () => {
   return (
-    <div className="bg-gray-950 text-white border-b border-gray-800">
+    <div
+      className="bg-gray-950 text-white border-b border-gray-800"
+      id="experience"
+    >
       <div className="bg-gray-950">
         <div className="grid grid-cols-12 items-center h-full relative py-4">
           <div className="col-span-1"></div>

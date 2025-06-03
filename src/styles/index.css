@@ -41,3 +41,11 @@
   background-size: 400% 100%;
   animation: opacity-animation 30s linear infinite;
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 72px; /* Espaçamento para o topo */
+}
