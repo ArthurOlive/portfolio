@@ -43,6 +43,13 @@ export const Home = () => {
                 <span className="text-sm">Saiba mais</span>
               </ButtonOutiler>
             </ul>
+            <ul>
+              <ButtonOutiler
+                onClick={() => window.open("/documents/resume.pdf", "_blank")}
+              >
+                <span className="text-sm">Download CV</span>
+              </ButtonOutiler>
+            </ul>
           </nav>
         </div>
         <div className="col-span-6 relative max-w-full overflow-hidden">
