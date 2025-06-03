@@ -35,7 +35,7 @@ export const Header = () => {
                 href="/contact"
                 className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
               >
-                Projetos
+                Experiência
               </a>
             </li>
             <li>
@@ -43,7 +43,7 @@ export const Header = () => {
                 href="/contact"
                 className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-l whitespace-nowrap overflow-ellipsis"
               >
-                Artigos e E-Books
+                Projetos
               </a>
             </li>
             <li>
