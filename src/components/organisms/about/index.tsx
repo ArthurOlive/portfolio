@@ -12,7 +12,7 @@ export const About = () => {
       >
         <div className="grid grid-cols-12 items-center h-full justify-items-center relative py-4">
           <div className="col-span-1"></div>
-          <div className="col-span-10 grid grid-cols-12 h-full gap-3">
+          <div className="col-span-10 grid grid-cols-12 h-full gap-3 container mx-auto">
             <div className="p-8 col-span-12 lg:col-span-8 border border-gray-900 rounded-lg bg-gray-950">
               <h2 className="text-4xl font-bold text-white">Sobre min</h2>
               <div className="w-44 h-2 barra rounded mb-4" />
