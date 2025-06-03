@@ -2,7 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export const Header = () => {
   return (
-    <header className="bg-gray-900 text-white p-4 ">
+    <header className="bg-gray-900 text-white p-4 fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <h1 className="text-2xl font-bold p-1 bg-blue-500 rounded-lg italic">
@@ -11,30 +11,42 @@ export const Header = () => {
           <h1 className="text-2xl">Arthur Oliveira</h1>
         </div>
         <nav>
-          <ul className="flex space-x-4 items-center">
+          <ul className="flex gap-2 items-center">
             <li>
-              <a href="/" className="hover:underline">
+              <a
+                href="/"
+                className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
+              >
                 Início
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:underline">
+              <a
+                href="/about"
+                className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
+              >
                 Sobre
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">
+              <a
+                href="/contact"
+                className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
+              >
                 Projetos
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">
+              <a
+                href="/contact"
+                className="duration-300 animation-all p-2 px-3 hover:bg-gray-950 rounded-lg"
+              >
                 Artigos e E-Books
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/arthuroliveira"
+                href="https://github.com/ArthurOlive"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -45,7 +57,7 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/arthuroliveira"
+                href="https://www.linkedin.com/in/arthurvitoroliveira"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -56,7 +68,7 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="https://twitter.com/arthuroliveira"
+                href="https://instagram.com/arthur.oli23"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
