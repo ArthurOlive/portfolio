@@ -53,12 +53,7 @@ export const Project = () => {
           </div>
 
           <div className=" gap-4 rounded-2xl overflow-hidden">
-            <div className="flex text-white">
-              <div className="bg-red-500 w-80 h-80"></div>
-              <div>
-                <h1>Mindsafe</h1>
-              </div>
-            </div>
+            <div className="flex text-white"></div>
           </div>
         </div>
       </div>
