@@ -195,7 +195,87 @@ export const Project = () => {
                 )}
 
                 {selectedProject === "GAMES" && (
-                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2 min-h-96"></div>
+                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2 min-h-96">
+                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                      <div className="relative mb-4">
+                        <h3 className="text-lg font-semibold mb-2">Pokemix</h3>
+                        <span className="p-1 text-xs bg-blue-500 rounded-lg text-white absolute top-0 right-2">
+                          Aberto
+                        </span>
+                      </div>
+                      <div className="mb-4 flex flex-row gap-4 w-full h-96 items-center justify-center">
+                        <img
+                          src="https://github.com/ArthurOlive/pokemix/raw/main/.github/images/image.png"
+                          alt="Pokemix game"
+                          className="rounded-2xl shadow-lg mt-4 h-full object-cover"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-400">
+                        Pokemix é um jogo divertido de captura de Pokémon, onde
+                        você pode lançar Pokébolas para tentar capturar
+                        diferentes Pokémon!
+                      </p>
+
+                      <ul>
+                        <li className="text-sm text-gray-400 mt-2">
+                          <b>Stack:</b> ReactJS, TypeScript, TailwindCSS
+                        </li>
+                        <li className="text-sm text-gray-400">
+                          <b>Link:</b>{" "}
+                          <a
+                            href="https://github.com/ArthurOlive/pokemix"
+                            className="hover:underline pr-1"
+                            target="_blank"
+                          >
+                            pokemix
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                      <div className="relative mb-4">
+                        <h3 className="text-lg font-semibold mb-2">
+                          Mini Termoo
+                        </h3>
+                        <span className="p-1 text-xs bg-blue-500 rounded-lg text-white absolute top-0 right-2">
+                          Aberto
+                        </span>
+                      </div>
+                      <div className="mb-4 flex flex-row gap-4 w-full h-96 items-center justify-center">
+                        <img
+                          src="https://github.com/ArthurOlive/mini-termoo/raw/main/images/minitermo-regras.png"
+                          alt="Mini Termo game"
+                          className="rounded-2xl shadow-lg mt-4 h-full object-cover"
+                        />
+                      </div>
+                      <p className="text-sm text-gray-400">
+                        O <b>Mini Termo</b> é um jogo divertido onde o objetivo
+                        é adivinhar uma palavra de 5 letras em até 6 tentativas.
+                        A cada tentativa, o jogo indica quais letras estão
+                        corretas e em suas posições certas, quais fazem parte da
+                        palavra mas estão em posições diferentes, e quais não
+                        aparecem na palavra. Use as dicas para acertar a palavra
+                        secreta!
+                      </p>
+
+                      <ul>
+                        <li className="text-sm text-gray-400 mt-2">
+                          <b>Stack:</b> Javascript, TailwindCSS
+                        </li>
+                        <li className="text-sm text-gray-400">
+                          <b>Link:</b>{" "}
+                          <a
+                            href="https://github.com/ArthurOlive/mini-termoo"
+                            className="hover:underline pr-1"
+                            target="_blank"
+                          >
+                            mini-termoo
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 )}
               </div>
             </div>
