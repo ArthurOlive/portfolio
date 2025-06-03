@@ -49,3 +49,66 @@ body {
 :target {
   scroll-margin-top: 72px; /* Espaçamento para o topo */
 }
+
+/* Barra de rolagem vertical */
+*::-webkit-scrollbar {
+  width: 4px; /* largura da barra de rolagem vertical */
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #000000; /* cor da barra de rolagem */
+  border-radius: 20px; /* arredondamento da barra de rolagem */
+}
+
+/* Barra de rolagem horizontal */
+*::-webkit-scrollbar-horizontal {
+  height: 4px; /* altura da barra de rolagem horizontal */
+}
+*::-webkit-scrollbar-track:horizontal {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb:horizontal {
+  background-color: #000000; /* cor da barra de rolagem */
+  border-radius: 20px; /* arredondamento da barra de rolagem */
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+}
+.scroll-bar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #000000; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+/* Barra de rolagem horizontal */
+.scroll-bar::-webkit-scrollbar-horizontal {
+  height: 4px; /* altura da barra de rolagem horizontal */
+}
+.scroll-bar::-webkit-scrollbar-track:horizontal {
+  background: transparent;
+}
+.scroll-bar::-webkit-scrollbar-thumb:horizontal {
+  background-color: #000000; /* cor da barra de rolagem */
+  border-radius: 20px; /* arredondamento da barra de rolagem */
+}
+
+/* roundness of the scroll thumb */
+.scroll-custom::-webkit-scrollbar {
+  width: 3px; /* width of the entire scrollbar */
+}
+.scroll-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-custom::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b; /* color of the scroll thumb */
+  border-radius: 20rem; /* roundness of the scroll thumb */
+}
