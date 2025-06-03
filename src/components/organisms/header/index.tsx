@@ -74,7 +74,7 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="https://instagram.com/arthur.oli23"
+                href="https://www.instagram.com/arthur.v.olive/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
