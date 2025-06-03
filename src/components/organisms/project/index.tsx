@@ -8,7 +8,7 @@ export const Project = () => {
     <div className="bg-gray-950">
       <div className="grid grid-cols-12 items-center h-full relative py-4">
         <div className="col-span-1"></div>
-        <div className="col-span-10 h-full gap-3 p-8 ">
+        <div className="col-span-10 h-full gap-3 py-8 ">
           <h2 className="text-4xl font-bold mb-4  text-white">Projetos</h2>
 
           <div className="grid grid-flow-row sm:grid-flow-col w-full mb-2 divide-y sm:divide-x divide-gray-400 overflow-auto border border-gray-400 rounded-lg">
