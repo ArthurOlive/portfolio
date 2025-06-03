@@ -14,8 +14,8 @@ export const About = () => {
           <div className="col-span-1"></div>
           <div className="col-span-10 grid grid-cols-12 h-full gap-3 container mx-auto">
             <div className="p-8 col-span-12 lg:col-span-8 border border-gray-900 rounded-lg bg-gray-950">
-              <h2 className="text-4xl font-bold text-white">Sobre min</h2>
-              <div className="w-44 h-2 barra rounded mb-4" />
+              <h2 className="text-4xl font-bold text-white">Sobre</h2>
+              <div className="w-24 h-2 barra rounded mb-4" />
 
               <p className="text-md text-gray-400 mb-4">
                 Sou apaixonado por tecnologia e iniciei minha jornada em
