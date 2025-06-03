@@ -144,7 +144,7 @@ export const Project = () => {
                           Aberto
                         </span>
                       </div>
-                      <div className="mb-4 flex flex-row gap-4 w-full h-96 items-center justify-center">
+                      <div className="mb-4 flex flex-row gap-4 w-full h-96 items-center justify-center overflow-auto">
                         <img
                           src="https://github.com/ArthurOlive/foodburger/blob/main/.github/images/app.png?raw=true"
                           alt="Foodburger app"
