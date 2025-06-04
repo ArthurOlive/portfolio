@@ -184,11 +184,35 @@ export const Project = () => {
                 )}
 
                 {selectedProject === "APIS" && (
-                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2 min-h-96"></div>
+                  <div className="py-2 grid grid-rows-4 sm:grid-rows-1 sm:grid-cols-4 gap-2 bg-gray-900 p-2">
+                    <a
+                      href="https://github.com/ArthurOlive/estados-e-municipios-ibge"
+                      className="cursor-pointer"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=ArthurOlive&repo=estados-e-municipios-ibge&bg_color=030712&border_color=364153&show_icons=true&icon_color=30A3DC&title_color=fff&text_color=FFF&border_radius=10"
+                        alt=""
+                        className="w-full"
+                      />
+                    </a>
+
+                    <a
+                      href="https://github.com/ArthurOlive/finance-api"
+                      className="cursor-pointer"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=ArthurOlive&repo=finance-api&bg_color=030712&border_color=364153&show_icons=true&icon_color=30A3DC&title_color=fff&text_color=FFF&border_radius=10"
+                        alt=""
+                        className="w-full"
+                      />
+                    </a>
+                  </div>
                 )}
 
                 {selectedProject === "GAMES" && (
-                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2 min-h-96">
+                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2">
                     <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
                       <div className="relative mb-4">
                         <h3 className="text-lg font-semibold mb-2">Pokemix</h3>
