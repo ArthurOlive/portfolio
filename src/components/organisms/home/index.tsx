@@ -1,7 +1,7 @@
-import { SubTitle } from "../../atoms/fonts/subtitle";
-import { ButtonOutiler } from "../../atoms/buttons";
-import { Title } from "../../atoms/fonts/title";
 import { FaCircleDot } from "react-icons/fa6";
+import { Button, ButtonOutiler } from "../../atoms/buttons";
+import { SubTitle } from "../../atoms/fonts/subtitle";
+import { Title } from "../../atoms/fonts/title";
 
 export const Home = () => {
   return (
@@ -42,15 +42,15 @@ export const Home = () => {
           </nav>
           <nav className="mt-8 flex gap-2 text-lg text-gray-700">
             <ul>
-              <ButtonOutiler>
-                <span className="text-sm">Saiba mais</span>
-              </ButtonOutiler>
-            </ul>
-            <ul>
-              <ButtonOutiler
+              <Button
                 onClick={() => window.open("/documents/resume.pdf", "_blank")}
               >
                 <span className="text-sm">Download CV</span>
+              </Button>
+            </ul>
+            <ul>
+              <ButtonOutiler onClick={() => (document.location = "#about")}>
+                <span className="text-sm">Saiba mais</span>
               </ButtonOutiler>
             </ul>
           </nav>

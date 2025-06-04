@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaAppStoreIos, FaGamepad, FaProjectDiagram } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa6";
+import { ButtonOutiler } from "../../atoms/buttons";
 
 export const Project = () => {
   const [selectedProject, setSelectedProject] = useState<string>("APPS");
@@ -29,8 +30,8 @@ export const Project = () => {
             <div
               className={`flex gap-4 items-start justify-center p-4 ${
                 selectedProject == "APPS"
-                  ? "text-purple-500 bg-purple-500/5 "
-                  : "text-white"
+                  ? "text-purple-500 bg-purple-500/5 hover:bg-purple-500/10"
+                  : "text-white hover:bg-gray-900/50"
               } cursor-pointer`}
               onClick={() => setSelectedProject("APPS")}
             >
@@ -50,8 +51,8 @@ export const Project = () => {
             <div
               className={`${
                 selectedProject == "APIS"
-                  ? "text-pink-500 bg-pink-500/5 "
-                  : "text-white"
+                  ? "text-pink-500 bg-pink-500/5 hover:bg-pink-500/10"
+                  : "text-white hover:bg-gray-900/50"
               } flex gap-4 items-start justify-center p-4 cursor-pointer`}
               onClick={() => setSelectedProject("APIS")}
             >
@@ -72,8 +73,8 @@ export const Project = () => {
               className={`
                 ${
                   selectedProject == "GAMES"
-                    ? "text-blue-500 bg-blue-500/5 "
-                    : "text-white"
+                    ? "text-blue-500 bg-blue-500/5 hover:bg-blue-500/10"
+                    : "text-white hover:bg-gray-900/50"
                 } flex gap-4 items-start justify-center p-4 cursor-pointer`}
               onClick={() => setSelectedProject("GAMES")}
             >
@@ -124,13 +125,13 @@ export const Project = () => {
                           <b>Stack:</b> ReactJS, Kotlin, Java, Spring, Postgres
                         </li>
                         <li className="text-sm text-gray-400">
-                          <b>Link:</b>{" "}
+                          <b>Link de acesso:</b>{" "}
                           <a
                             href="https://mindsafe.com.br"
-                            className="hover:underline"
+                            className="underline text-blue-500 text-base hover:text-blue-600"
                             target="_blank"
                           >
-                            mindsafe.com.br
+                            www.mindsafe.com.br
                           </a>
                         </li>
                       </ul>
@@ -169,20 +170,13 @@ export const Project = () => {
                           <b>Stack:</b> ReactJS, Java, Spring, Postgres
                         </li>
                         <li className="text-sm text-gray-400">
-                          <b>Link:</b>{" "}
+                          <b>Link de acesso:</b>{" "}
                           <a
                             href="https://github.com/ArthurOlive/foodburger"
-                            className="hover:underline pr-1"
+                            className="underline text-blue-500 text-base hover:text-blue-600"
                             target="_blank"
                           >
-                            foodburger-web
-                          </a>
-                          <a
-                            href="https://github.com/ArthurOlive/foodburger-api"
-                            className="hover:underline"
-                            target="_blank"
-                          >
-                            foodburger-api
+                            Foodburger App
                           </a>
                         </li>
                       </ul>
@@ -221,13 +215,13 @@ export const Project = () => {
                           <b>Stack:</b> ReactJS, TypeScript, TailwindCSS
                         </li>
                         <li className="text-sm text-gray-400">
-                          <b>Link:</b>{" "}
+                          <b>Link de acesso:</b>{" "}
                           <a
                             href="https://github.com/ArthurOlive/pokemix"
-                            className="hover:underline pr-1"
+                            className="underline text-blue-500 text-base hover:text-blue-600"
                             target="_blank"
                           >
-                            pokemix
+                            Pokemix
                           </a>
                         </li>
                       </ul>
@@ -264,13 +258,13 @@ export const Project = () => {
                           <b>Stack:</b> Javascript, TailwindCSS
                         </li>
                         <li className="text-sm text-gray-400">
-                          <b>Link:</b>{" "}
+                          <b>Link de acesso:</b>{" "}
                           <a
                             href="https://github.com/ArthurOlive/mini-termoo"
-                            className="hover:underline pr-1"
+                            className="underline text-blue-500 text-base hover:text-blue-600"
                             target="_blank"
                           >
-                            mini-termoo
+                            Mini Termoo
                           </a>
                         </li>
                       </ul>
