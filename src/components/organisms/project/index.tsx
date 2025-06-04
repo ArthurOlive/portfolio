@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaAppStoreIos, FaGamepad, FaProjectDiagram } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa6";
-import { ButtonOutiler } from "../../atoms/buttons";
 
 export const Project = () => {
   const [selectedProject, setSelectedProject] = useState<string>("APPS");
