@@ -3,10 +3,10 @@ import { FaNetworkWired } from "react-icons/fa";
 export const Experience = () => {
   return (
     <div
-      className="bg-gray-950 text-white border-b border-gray-800"
+      className="dark:bg-gray-950 dark:text-white border-b border-gray-200 dark:border-gray-800"
       id="experience"
     >
-      <div className="bg-gray-950">
+      <div className="dark:bg-gray-950">
         <div className="grid grid-cols-12 items-center h-full relative py-4">
           <div className="col-span-1"></div>
           <div className="col-span-10 h-full gap-3 py-8 container mx-auto">
@@ -14,14 +14,14 @@ export const Experience = () => {
               <FaNetworkWired className="text-blue-400" /> Experiência
               Profissional
             </h2>
-            <p className="text-gray-400 mb-4">
+            <p className="dark:text-gray-400 text-gray-800 mb-4">
               Minha experiência profissional inclui uma variedade de papéis em
               desenvolvimento de software, onde trabalhei com tecnologias como
               React, Kotlin e Java. Aqui estão alguns dos principais cargos que
               ocupei ao longo da minha carreira.
             </p>
             <div className="space-y-6">
-              <div className="bg-gray-900 p-4 rounded-lg shadow-md">
+              <div className="dark:bg-gray-900 bg-white p-4 rounded-lg shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <img
                     src="https://media.licdn.com/dms/image/v2/D4D0BAQGIV_raAA62BA/company-logo_100_100/company-logo_100_100/0/1725554697774/solarz_tech_logo?e=1754524800&v=beta&t=Y2hJWDvG7izcORghTcD6pQfc3Mpp8Z8KVkkLZd8K7DU"
@@ -38,7 +38,7 @@ export const Experience = () => {
                   </div>
                 </div>
 
-                <ul className="list-disc pl-5 mt-2 text-gray-300">
+                <ul className="list-disc pl-5 mt-2 dark:text-gray-300">
                   <li>
                     Desenvolvimento e manutenção de sistemas utilizando Spring
                     boot com Java 21 e NextJs 12 com ReactJs.
@@ -81,7 +81,7 @@ export const Experience = () => {
                 </ul>
               </div>
 
-              <div className="bg-gray-900 p-4 rounded-lg shadow-md">
+              <div className="dark:bg-gray-900 bg-white p-4 rounded-lg shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <img
                     src="https://media.licdn.com/dms/image/v2/D4E0BAQE6e6nZW0MmGw/company-logo_100_100/B4EZc2WtOPHIAY-/0/1748963612067/laishuol_logo?e=1754524800&v=beta&t=PZz37ZZUiPDtSuE6Hliog1PB4mG5aeBRqT4gcvQ9glo"
@@ -95,7 +95,7 @@ export const Experience = () => {
                     <p className="text-gray-400">LAIS - Jub 2023 - Out 2023</p>
                   </div>
                 </div>
-                <ul className="list-disc pl-5 mt-2 text-gray-300">
+                <ul className="list-disc pl-5 mt-2 dark:text-gray-300">
                   <li>
                     Desenvolvimento e manutenção de sistemas utilizando ReactJs
                   </li>
@@ -109,7 +109,7 @@ export const Experience = () => {
                 </ul>
               </div>
 
-              <div className="bg-gray-900 p-4 rounded-lg shadow-md">
+              <div className="dark:bg-gray-900 bg-white p-4 rounded-lg shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <img
                     src="https://media.licdn.com/dms/image/v2/D4E0BAQFGjs6rIoKpPg/company-logo_100_100/company-logo_100_100/0/1711113619040/bureau_works_logo?e=1754524800&v=beta&t=jk--uRKd2m0rNvJP6bSy1cK08uyA3Hr6N67WEPejHLg"
@@ -125,7 +125,7 @@ export const Experience = () => {
                     </p>
                   </div>
                 </div>
-                <ul className="list-disc pl-5 mt-2 text-gray-300">
+                <ul className="list-disc pl-5 mt-2 dark:text-gray-300">
                   <li>
                     Desenvolvimento e manutenção de sistemas utilizando Java com
                     Spring e Vuejs 2 com Nuxt.
@@ -148,7 +148,7 @@ export const Experience = () => {
                 </ul>
               </div>
 
-              <div className="bg-gray-900 p-4 rounded-lg shadow-md">
+              <div className="dark:bg-gray-900 bg-white p-4 rounded-lg shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <img
                     src="https://media.licdn.com/dms/image/v2/D4E0BAQEb-01AA6Ggfw/company-logo_100_100/company-logo_100_100/0/1689248604432/cloud_humans_logo?e=1754524800&v=beta&t=GxEQVkV-dbEjvqADV4NbcVokpZ9b9mo6uSO9hcTzJ7I"
@@ -164,7 +164,7 @@ export const Experience = () => {
                     </p>
                   </div>
                 </div>
-                <ul className="list-disc pl-5 mt-2 text-gray-300">
+                <ul className="list-disc pl-5 mt-2 dark:text-gray-300">
                   <li>
                     Desenvolvimento e manutenção do sistema utilizando Kotlin
                     com Spring, ReactJs, Vuejs e Ruby on Rails.

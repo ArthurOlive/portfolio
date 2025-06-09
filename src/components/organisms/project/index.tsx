@@ -6,15 +6,15 @@ export const Project = () => {
   const [selectedProject, setSelectedProject] = useState<string>("APPS");
 
   return (
-    <div className="bg-gray-950" id="projects">
+    <div className="dark:bg-gray-950" id="projects">
       <div className="grid grid-cols-12 items-center h-full relative py-4">
         <div className="col-span-1"></div>
         <div className="col-span-10 h-full gap-3 py-8 container mx-auto">
-          <h2 className="text-4xl font-bold mb-4  text-white flex items-center gap-2">
+          <h2 className="text-4xl font-bold mb-4  dark:text-white flex items-center gap-2">
             <FaProjectDiagram className="text-blue-400" /> Projetos
           </h2>
 
-          <p className="text-md text-gray-400 text-justify mb-4">
+          <p className="text-md dark:text-gray-400 text-gray-800 text-justify mb-4">
             Ao longo da minha carreira, tive a oportunidade de trabalhar em
             diversos projetos que refletem minha paixão por tecnologia e
             inovação. Desde aplicações completas que integram front-end e
@@ -25,12 +25,12 @@ export const Project = () => {
             para entender melhor minha experiência e habilidades técnicas.
           </p>
 
-          <div className="grid grid-flow-row sm:grid-flow-col w-full mb-2 divide-y sm:divide-x divide-gray-800 overflow-auto border border-gray-800 rounded-lg">
+          <div className="grid grid-flow-row sm:grid-flow-col w-full mb-2 divide-y sm:divide-x divide-gray-300 dark:divide-gray-800 overflow-auto border border-gray-300 dark:border-gray-800 rounded-lg">
             <div
               className={`flex gap-4 items-start justify-center p-4 ${
                 selectedProject == "APPS"
                   ? "text-purple-500 bg-purple-500/5 hover:bg-purple-500/10"
-                  : "text-white hover:bg-gray-900/50"
+                  : "dark:text-white text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900/50"
               } cursor-pointer`}
               onClick={() => setSelectedProject("APPS")}
             >
@@ -51,7 +51,7 @@ export const Project = () => {
               className={`${
                 selectedProject == "APIS"
                   ? "text-pink-500 bg-pink-500/5 hover:bg-pink-500/10"
-                  : "text-white hover:bg-gray-900/50"
+                  : "dark:text-white text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900/50"
               } flex gap-4 items-start justify-center p-4 cursor-pointer`}
               onClick={() => setSelectedProject("APIS")}
             >
@@ -73,7 +73,7 @@ export const Project = () => {
                 ${
                   selectedProject == "GAMES"
                     ? "text-blue-500 bg-blue-500/5 hover:bg-blue-500/10"
-                    : "text-white hover:bg-gray-900/50"
+                    : "dark:text-white text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-900/50"
                 } flex gap-4 items-start justify-center p-4 cursor-pointer`}
               onClick={() => setSelectedProject("GAMES")}
             >
@@ -92,11 +92,11 @@ export const Project = () => {
           </div>
 
           <div className=" gap-4 rounded-2xl overflow-hidden">
-            <div className="flex text-white">
+            <div className="flex dark:text-white">
               <div className="w-full">
                 {selectedProject === "APPS" && (
-                  <div className="py-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2">
-                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                  <div className="py-2 grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-3 gap-2 dark:bg-gray-900 bg-gray-100 p-2">
+                    <div className="border border-gray-300 dark:border-gray-700 rounded-2xl p-4 dark:bg-gray-950 bg-white">
                       <div className="relative mb-4">
                         <h3 className="text-lg font-semibold mb-2">Mindsafe</h3>
                         <span className="p-1 text-xs bg-red-500 rounded-lg text-white absolute top-0 right-2">
@@ -135,7 +135,7 @@ export const Project = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                    <div className="border border-gray-300 dark:border-gray-700 rounded-2xl p-4 dark:bg-gray-950 bg-white">
                       <div className="relative mb-4">
                         <h3 className="text-lg font-semibold mb-2">
                           Foodburger
@@ -184,7 +184,7 @@ export const Project = () => {
                 )}
 
                 {selectedProject === "APIS" && (
-                  <div className="py-2 grid grid-rows-4 sm:grid-rows-1 sm:grid-cols-4 gap-2 bg-gray-900 p-2">
+                  <div className="py-2 grid grid-rows-4 sm:grid-rows-1 sm:grid-cols-4 gap-2 bg-gray-100 dark:bg-gray-900 p-2">
                     <a
                       href="https://github.com/ArthurOlive/estados-e-municipios-ibge"
                       className="cursor-pointer"
@@ -212,8 +212,8 @@ export const Project = () => {
                 )}
 
                 {selectedProject === "GAMES" && (
-                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-900 p-2">
-                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                  <div className="py-2 grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 gap-2 bg-gray-100 dark:bg-gray-900 p-2">
+                    <div className="border border-gray-300 dark:border-gray-700 rounded-2xl p-4 dark:bg-gray-950 bg-white">
                       <div className="relative mb-4">
                         <h3 className="text-lg font-semibold mb-2">Pokemix</h3>
                         <span className="p-1 text-xs bg-blue-500 rounded-lg text-white absolute top-0 right-2">
@@ -250,7 +250,7 @@ export const Project = () => {
                       </ul>
                     </div>
 
-                    <div className="border border-gray-700 rounded-2xl p-4 bg-gray-950">
+                    <div className="border border-gray-300 dark:border-gray-700 rounded-2xl p-4 dark:bg-gray-950 bg-white">
                       <div className="relative mb-4">
                         <h3 className="text-lg font-semibold mb-2">
                           Mini Termoo
